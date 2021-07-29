@@ -2,22 +2,11 @@ import React from "react";
 
 const Grid = () => {
   return (
-    <>
-      <div className="grid">
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
-        <div className="item"></div>
+    <div className="img-grid">
+      <div className="img-wrap">
+        <img src="image" alt="img" />
       </div>
-    </>
+    </div>
   );
 };
 

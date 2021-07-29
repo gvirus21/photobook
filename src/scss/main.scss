@@ -26,7 +26,7 @@ body {
 .heading {
   font-size: 3em;
   font-weight: 500;
-  margin: 1em;
+  margin: 0.5em;
   text-align: center;
 }
 
@@ -57,6 +57,32 @@ body {
   color: teal;
 }
 
+.output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 20em;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (max-width: 400px) {
+  .heading {
+    font-size: 2em;
+  }
+  .output {
+    top: 18em;
+  }
+}
+.file__name {
+  font-size: 0.8em;
+  color: teal;
+  margin: 1em 0;
+}
+
 //progress bar
 .progress-bar-container {
   height: 10px;
@@ -65,19 +91,6 @@ body {
   border-radius: 20px;
   display: inline-block;
   background-color: teal;
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.file__name {
-  font-size: 0.8em;
-  color: teal;
-  margin: 1em 0;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
 }
 
 .grid {
@@ -96,6 +109,6 @@ body {
 
 .item {
   background-color: teal;
-  max-height: 20em;
-  max-width: 10em;
+  height: 15em;
+  width: 10em;
 }
