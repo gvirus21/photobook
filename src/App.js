@@ -8,7 +8,7 @@ import Modal from "./components/Modal";
 import { useState } from "react";
 
 function App() {
-  const [selectedImg, setSelectedImg] = useState("");
+  const [selectedImg, setSelectedImg] = useState(null);
 
   return (
     <div className="App">
@@ -16,7 +16,9 @@ function App() {
       <Heading />
       <UploadForm />
       <Grid setSelectedImg={setSelectedImg} />
-      {selectedImg && <Modal selectedImg={selectedImg} />}
+      {selectedImg && (
+        <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
+      )}
     </div>
   );
 }
