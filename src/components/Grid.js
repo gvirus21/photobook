@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 const Grid = ({ setSelectedImg }) => {
   const { docs } = UseFirestore("images");
-  console.log(docs);
 
   return (
     <div className="img-grid">
@@ -24,10 +23,8 @@ const Grid = ({ setSelectedImg }) => {
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
             />
-            {console.log(docs.url)}
           </motion.div>
         ))}
-      {console.log(docs)}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../images/photobook.svg";
+import img from "../images/photobook-2.svg";
 
 const Logo = () => {
   return (
